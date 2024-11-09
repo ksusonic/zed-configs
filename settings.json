@@ -1,0 +1,147 @@
+{
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "One Dark"
+    },
+    "base_keymap": "VSCode",
+    "features": {
+        "inline_completion_provider": "none",
+        "copilot": false
+    },
+    "buffer_font_family": "GeistMono Nerd Font",
+    // Set the buffer text's font fallbacks, this will be merged with
+    // the platform's default fallbacks.
+    "buffer_font_fallbacks": ["Zed Plex Mono"],
+    // The default font size for text in the editor
+    "buffer_font_size": 15,
+    // The weight of the editor font in standard CSS units from 100 to 900.
+    "buffer_font_weight": 400,
+    // Whether to enable vim modes and key bindings.
+    "vim_mode": true,
+    // Whether to pop the completions menu while typing in an editor without
+    // explicitly requesting it.
+    "show_completions_on_input": true,
+    // Whether to display inline and alongside documentation for items in the
+    // completions menu
+    "show_completion_documentation": true,
+    "show_inline_completions": true,
+    "toolbar": {
+        // Whether to show quick action buttons.
+        "quick_actions": true,
+        // Whether to show the Selections menu in the editor toolbar
+        "selections_menu": true
+    },
+    "collaboration_panel": {
+        "button": false
+    },
+    "chat_panel": {
+        "button": false
+    },
+    "message_editor": {
+        // Whether to automatically replace emoji shortcodes with emoji characters.
+        // For example: typing `:wave:` gets replaced with `👋`.
+        "auto_replace_emoji_shortcode": true
+    },
+    "notification_panel": {
+        // Whether to show the notification panel button in the status bar.
+        "button": true,
+        // Where to dock the notification panel. Can be 'left' or 'right'.
+        "dock": "right",
+        // Default width of the notification panel.
+        "default_width": 380
+    },
+    "assistant": {
+        "version": "1",
+        "provider": {
+            "default_model": {
+                "name": "llama3.2:latest",
+                "display_name": "llama3.2",
+                "max_tokens": 16384,
+                "keep_alive": -1
+            },
+            "name": "ollama"
+        }
+    },
+    // The settings for slash commands.
+    "slash_commands": {
+        // Settings for the `/docs` slash command.
+        "docs": {
+            // Whether `/docs` is enabled.
+            "enabled": false
+        },
+        // Settings for the `/project` slash command.
+        "project": {
+            // Whether `/project` is enabled.
+            "enabled": false
+        }
+    },
+    "enable_language_server": true,
+    "tabs": {
+        // Show git status colors in the editor tabs.
+        "git_status": true,
+        // Position of the close button on the editor tabs.
+        "close_position": "right",
+        // Whether to show the file icon for a tab.
+        "file_icons": false,
+        "activate_on_close": "history"
+    },
+    "remove_trailing_whitespace_on_save": true,
+    // Whether to start a new line with a comment when a previous line is a comment as well.
+    "extend_comment_on_newline": true,
+    "formatter": "auto",
+    "soft_wrap": "none",
+    // How many columns a tab should occupy.
+    "tab_size": 4,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "auto_update": true,
+    "git": {
+        "git_gutter": "tracked_files",
+        "inline_blame": {
+            "enabled": true
+        }
+    },
+    "load_direnv": "direct",
+    "inline_completions": {
+        "disabled_globs": [".env"]
+    },
+    "terminal": {
+        "shell": "system",
+        "dock": "bottom",
+        "default_height": 320,
+        "max_scroll_history_lines": 10000
+    },
+    "file_types": {
+        "Plain Text": ["txt"],
+        "TOML": ["uv.lock"]
+    },
+    "auto_install_extensions": {
+        "html": true
+    },
+    // Different settings for specific language models.
+    "language_models": {
+        "ollama": {
+            "api_url": "http://localhost:11434",
+            "low_speed_timeout_in_seconds": 60
+        }
+    },
+    // Jupyter settings
+    "jupyter": {
+        "enabled": true
+        // Specify the language name as the key and the kernel name as the value.
+        // "kernel_selections": {
+        //    "python": "conda-base"
+        //    "typescript": "deno"
+        // }
+    },
+    // Vim settings
+    "vim": {
+        "toggle_relative_line_numbers": false,
+        "use_system_clipboard": "always",
+        "use_multiline_find": false,
+        "use_smartcase_find": true
+    }
+}
